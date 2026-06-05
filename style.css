@@ -1,18 +1,16 @@
-
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #3498db; 
+    background-color: #1a1a2e; 
     color: white;
 }
-
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -35,10 +33,10 @@ nav {
 }
 
 .menu button:hover {
-    background-color: white;
-    color: #3498db;
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+    color: white;
 }
-
 
 .content-section {
     padding: 50px;
@@ -53,28 +51,129 @@ nav {
 
 .status-badge {
     display: inline-block;
-    background: #2980b9;
+    background: #6c5ce7;
     padding: 10px 20px;
     border-radius: 20px;
     margin-top: 20px;
     font-size: 0.9em;
 }
 
-
 .post {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     padding: 30px;
     border-radius: 10px;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .post h2 {
     margin-top: 0;
+    color: #a29bfe;
 }
 
 .date {
     font-size: 0.8em;
     opacity: 0.8;
+}
+
+.post-text p {
+    margin-bottom: 20px;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a; /* Dark navy blue background */
+    color: #e2e8f0; /* Light grey text for better contrast */
+    transition: background-color 0.5s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8; /* Accent light blue */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu button {
+    background: none;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding: 8px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.menu button:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.content-section {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.status-badge {
+    display: inline-block;
+    background: #1e293b;
+    border: 1px solid #38bdf8;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    transition: transform 0.3s ease;
+}
+
+.status-badge:hover {
+    transform: scale(1.05);
+}
+
+.post {
+    background: rgba(30, 41, 59, 0.5);
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.post:hover {
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #38bdf8;
+}
+
+.date {
+    font-size: 0.8em;
+    opacity: 0.7;
+    margin-bottom: 15px;
 }
 
 .post-text p {
